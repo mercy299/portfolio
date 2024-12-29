@@ -51,6 +51,7 @@
 <style scoped>
 .skills-container {
   padding: 0 20px;
+  margin: 50px 0;
 }
 .welcome {
   color: #0db760;
@@ -88,5 +89,21 @@ a {
 }
 .group.end {
   align-self: flex-end;
+}
+
+@media (max-width: 960px) {
+  .content {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    font-family: var(--font-family);
+    max-width: var(--max-content-width);
+    margin: auto;
+    align-content: center;
+  }
+  .skills-intro {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 </style>

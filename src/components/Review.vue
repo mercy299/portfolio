@@ -9,7 +9,7 @@
         <h2>200+</h2>
         <p>Projects Completed</p>
       </div>
-      <div class="group">
+      <div class="group" style="padding-left: 50px">
         <h2>99+</h2>
         <p>Reviews Given</p>
       </div>

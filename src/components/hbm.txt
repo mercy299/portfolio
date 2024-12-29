@@ -1,0 +1,23 @@
+/* Rectangle 2033 */
+
+position: absolute;
+width: 401px;
+height: 401px;
+left: 814px;
+top: 312px;
+
+border: 5px solid #000000;
+border-radius: 2px;
+
+
+
+/* Rectangle 2033 */
+
+position: absolute;
+width: 401px;
+height: 401px;
+left: 814px;
+top: 312px;
+
+border: 5px solid #000000;
+border-radius: 2px;

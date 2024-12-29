@@ -137,6 +137,7 @@ a {
 }
 .form {
   display: flex;
+  align-self: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -151,5 +152,30 @@ a {
   /* box-sizing: border-box; */
   border-radius: 8px;
   border: 1px solid #bec0bf;
+}
+
+@media (max-width: 960px) {
+  .form-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* gap: 180px; */
+    margin: 30px auto;
+    width: 100%;
+  }
+  .form textarea {
+    width: 100%;
+    height: 170px;
+    /* box-sizing: border-box; */
+    border-radius: 8px;
+    border: 1px solid #bec0bf;
+  }
+  .form div input {
+    width: 350px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #bec0bf;
+  }
 }
 </style>

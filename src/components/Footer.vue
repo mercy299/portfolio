@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container">
     <div class="content">
-      <hr width="20px" />
+      <hr width="100%" />
       <div class="flex-content">
         <p>@2022.All Rights Reserved</p>
         <p>Designed by Tanvir Ahmed</p>
