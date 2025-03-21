@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-container">
-    <div class="carousel" ref="carousel">
+    <div class="carousel" ref="carouselRef">
       <!-- Image Slides -->
       <div
         v-for="(image, index) in images"
@@ -35,6 +35,9 @@ const images = [img1, img2, img3, img4, img5]
 // Reactive state for current index
 const currentIndex = ref(0)
 
+// Create a ref for the carousel container
+const carouselRef = ref(null)
+
 // Function to calculate the style for each slide based on its position
 const getSlideStyle = (index) => {
   return index === currentIndex.value
@@ -57,11 +60,12 @@ const nextSlide = () => {
 // Function to scroll to the active item and center it
 const scrollToItem = (index) => {
   nextTick(() => {
-    const carousel = $refs.carousel
-    const slides = carousel.querySelectorAll('.carousel-slide')
-    const activeSlide = slides[index]
-    const offset = activeSlide.offsetLeft - (carousel.offsetWidth - activeSlide.offsetWidth) / 2
-    carousel.scrollLeft = offset
+    if (carouselRef.value) {
+      const slides = carouselRef.value.querySelectorAll('.carousel-slide')
+      const activeSlide = slides[index]
+      const offset = activeSlide.offsetLeft - (carouselRef.value.offsetWidth - activeSlide.offsetWidth) / 2
+      carouselRef.value.scrollLeft = offset
+    }
   })
 }
 

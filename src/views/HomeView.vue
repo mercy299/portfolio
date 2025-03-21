@@ -9,13 +9,16 @@ import Contact from '@/components/Contact.vue'
 
 <template>
   <main>
-    <HeroSection />
-    <Review />
-    <Skills />
-    <Portfolio />
-    <CustomerReview />
-    <Contact />
+    <HeroSection  />
+    <Review id="review"/>
+    <Skills  id="skills"/>
+    <Portfolio  id="portfolio"/>
+    <CustomerReview  id="custormerreview"/>
+    <Contact id="contact"/>
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+
+</style>

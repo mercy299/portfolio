@@ -71,6 +71,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 .content {
   display: flex;
   /* justify-content: space-between; */
@@ -101,9 +102,15 @@ a {
     margin: auto;
     align-content: center;
   }
+  p {
+    font-size: 22px;
+  }
   .skills-intro {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

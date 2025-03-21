@@ -6,18 +6,32 @@
       </RouterLink>
       <div class="navbar-list-container">
         <ul class="navbar-list">
-          <li><RouterLink to="/about"> About </RouterLink></li>
-          <li><RouterLink to="/skills"> Skills</RouterLink></li>
-          <li><RouterLink to="/portfolio"> Portfolio</RouterLink></li>
-          <li><RouterLink to="/testimonial"> Testimonial</RouterLink></li>
+          <li><RouterLink to="#review"> Review </RouterLink></li>
+          <li><RouterLink to="#skills"> Skills</RouterLink></li>
+          <li><RouterLink to="#portfolio"> Portfolio</RouterLink></li>
+          <li><RouterLink to="#customerreview"> Testimonial</RouterLink></li>
         </ul>
       </div>
-      <button><RouterLink to="/cv"> Downloaad CV</RouterLink></button>
+      <button @click="handleDownload">
+        <RouterLink to="/"> Download CV</RouterLink>
+      </button>
     </nav>
   </header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
+const handleDownload = () => {
+  const filePath = "/cv.pdf"; 
+  const link = document.createElement("a");
+  link.href = filePath;
+  link.download = filePath.split("/").pop() || "default-filename.pdf"; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+</script>
 
 <style scoped>
 .navbar-container {
@@ -63,7 +77,14 @@ button {
   border-radius: 10px;
   background-color: transparent;
 }
-
+button:hover {
+  background-color: #0db760;
+  transition: 0.3s;
+  /* padding: 15px 26px; */
+}
+button:hover a {
+  color: white;
+}
 @media (min-width: 100px) and (max-width: 826px) {
   .navbar-container {
     max-width: 767px;

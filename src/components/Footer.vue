@@ -6,10 +6,18 @@
         <p>@2022.All Rights Reserved</p>
         <p>Designed by Tanvir Ahmed</p>
         <div class="socials">
-          <img src="../assets/Facebook logo.svg" />
-          <img src="../assets/Twitter logo.svg" />
-          <img src="../assets/LinkedIn logo.svg" />
-          <img src="../assets/Instagram logo.svg" />
+          <a href="https://www.facebook.com/your-profile" target="_blank">
+            <img src="../assets/Facebook logo.svg" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com/your-profile" target="_blank">
+            <img src="../assets/Twitter logo.svg" alt="Twitter" />
+          </a>
+          <a href="https://www.linkedin.com/in/mercy299/" target="_blank">
+            <img src="../assets/LinkedIn logo.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://10xannie.hashnode.dev/" target="_blank" >
+            <img src="../assets/hashnode.svg" alt="Hashnode" />
+          </a>
         </div>
       </div>
     </div>
@@ -39,7 +47,5 @@
   align-items: center;
   gap: 10px;
 }
-.socials img {
-  width: 25px;
-}
+
 </style>

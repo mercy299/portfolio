@@ -1,11 +1,16 @@
-import './assets/main.css'
+import './assets/main.css';
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import VueScrollTo from 'vue-scrollto';
 
-const app = createApp(App)
+// Create App instance
+const app = createApp(App);
 
-app.use(router)
+// Use Plugins
+app.use(router);
+app.use(VueScrollTo);
 
-app.mount('#app')
+// Mount the app
+app.mount('#app');

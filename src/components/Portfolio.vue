@@ -82,10 +82,16 @@ a {
     margin: auto;
     align-content: center;
   }
+
+  p {
+    font-size: 22px;
+  }
   .portfolio-intro {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    flex: 1;
-    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

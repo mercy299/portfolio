@@ -8,8 +8,8 @@
           <span style="color: #0db760">Project </span>
         </h2>
         <p>
-          Let’s make something new, different and more meaningful or make thing<br />
-          more visual or conceptual
+          Let’s make something new, different and more meaningful or make <br />thing more visual or
+          conceptual
         </p>
       </div>
       <div class="form-text-container">
@@ -36,30 +36,44 @@
             </p>
           </div>
         </div>
-        <div class="form">
+        <form 
+          class="form" 
+          action="https://formspree.io/f/manenjlk"
+          method="POST"
+        >
           <div>
-            <input v-model="name" placeholder="Name" />
-            <input v-model="email" placeholder="Email" />
+            <input v-model="formData.name" name="name" placeholder="Full Name" required />
+            <input v-model="formData.email" name="email" placeholder="Your Email" type="email" required />
           </div>
           <div>
-            <input v-model="name" placeholder="Name" />
-            <input v-model="name" placeholder="Name" />
+            <input v-model="formData.phone" name="phone" placeholder="Phone Number" type="tel" required />
+            <input v-model="formData.budget" name="budget" placeholder="Budget" type="text" required />
           </div>
-          <textarea v-model="message" placeholder="Message"></textarea>
-        </div>
-      </div>
-      <div class="button">
-        <button><RouterLink to="/cv"> Submit Message</RouterLink></button>
+          <textarea v-model="formData.message" name="message" placeholder="Message" required></textarea>
+          <div class="button">
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const email = ref('')
-const name = ref('')
-const message = ref('')
+import { ref } from 'vue';
+
+const formData = ref({
+  name: "",
+  email: "",
+  phone: "",
+  budget: "",
+  message: "",
+});
+
+const submitForm = () => {
+  // You can add additional validation or logic here if needed
+  console.log("Form data submitted:", formData.value);
+};
 </script>
 
 <style scoped>
@@ -88,6 +102,8 @@ button {
   padding: 15px 26px;
   border-radius: 10px;
   background-color: #0db760;
+  color: white;
+  cursor: pointer;
 }
 .button {
   display: flex;
@@ -108,12 +124,9 @@ a {
 .form-text-container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* gap: 180px; */
   margin: 30px auto;
   width: 100%;
 }
-
 .group {
   display: flex;
   gap: 20px;
@@ -128,12 +141,15 @@ a {
   height: 56px;
   border-radius: 8px;
   border: 1px solid #bec0bf;
+  padding: 16px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 .form div input::placeholder,
 .form textarea::placeholder {
   color: #bec0bf;
   font-weight: 300;
-  padding-left: 10px;
+  font-size: 16px;
 }
 .form {
   display: flex;
@@ -145,37 +161,26 @@ a {
   display: flex;
   gap: 12px;
 }
-
 .form textarea {
   width: 716px;
   height: 170px;
-  /* box-sizing: border-box; */
   border-radius: 8px;
   border: 1px solid #bec0bf;
+  padding: 16px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 960px) {
   .form-text-container {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* gap: 180px; */
     margin: 30px auto;
+  }
+  .form div input {
     width: 100%;
   }
   .form textarea {
     width: 100%;
-    height: 170px;
-    /* box-sizing: border-box; */
-    border-radius: 8px;
-    border: 1px solid #bec0bf;
-  }
-  .form div input {
-    width: 350px;
-    height: 56px;
-    border-radius: 8px;
-    border: 1px solid #bec0bf;
   }
 }
 </style>
