@@ -7,7 +7,7 @@
       <div class="navbar-list-container">
         <ul class="navbar-list">
           <li><RouterLink to="#review"> Review </RouterLink></li>
-          <li><RouterLink to="#skills"> Skills</RouterLink></li>
+          <li><RouterLink to="#skills"> Services</RouterLink></li>
           <li><RouterLink to="#portfolio"> Portfolio</RouterLink></li>
           <li><RouterLink to="#customerreview"> Testimonial</RouterLink></li>
         </ul>

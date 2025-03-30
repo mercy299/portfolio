@@ -1,51 +1,63 @@
 <template>
   <div class="skills-container">
     <div class="content">
-      <div class="skills-intro">
+      <div class="header-texts">
         <p class="welcome">My Skills</p>
-        <h2>
-          I have
-          <span style="color: #0db760"
-            >Creative <br />
-            design
-          </span>
-          experience
-        </h2>
+        <h2>Our customers say <span style="color: #0db760">Something </span></h2>
+      </div>
+      <div class="box-group">
+      <div class="box">
+        <h3>Cloud Infrastructure <br/> Engineer</h3>
         <p>
-          I’m specialist in UI/UX Designe. My passion is designing & solving <br />problems through
-          user experience and research.
+          Experience in designing and implementing scalable cloud infrastructure using AWS, Azure,
+          and Google Cloud Platform. Proficient in containerization technologies such as Docker and
+          Kubernetes.
         </p>
-        <div>
-          <button><RouterLink to="/cv"> Hire Me</RouterLink></button>
-        </div>
       </div>
-      <div class="skills-block">
-        <div class="group">
-          <img src="../assets/Diamond Outline.svg" />
-          <h2>Visual Design</h2>
-          <p>
-            Create user interface design with<br />
-            unique & modern ideas
-          </p>
-        </div>
-        <div class="group end">
-          <img src="../assets/Pulse Outline.svg" />
-          <h2>Design Prototype</h2>
-          <p>
-            Create advance design prototype<br />
-            with Figma apps.
-          </p>
-        </div>
-        <div class="group">
-          <img src="../assets/School Outline.svg" />
-          <h2>UX Research</h2>
-          <p>Create digital user products with <br />updated ideas</p>
-        </div>
+      <div class="box">
+        <h3>Cloud Infrastructure</h3>
+        <p>
+          Experience in designing and implementing scalable cloud infrastructure using AWS, Azure,
+          and Google Cloud Platform. Proficient in containerization technologies such as Docker and
+          Kubernetes.
+        </p>
       </div>
+      <div class="box">
+        <h3>Cloud Infrastructure Engineer</h3>
+        <p>
+          Experience in designing and implementing scalable cloud infrastructure using AWS, Azure,
+          and Google Cloud Platform. Proficient in containerization technologies such as Docker and
+          Kubernetes.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Cloud Infrastructure Engineer</h3>
+        <p>
+          Experience in designing and implementing scalable cloud infrastructure using AWS, Azure,
+          and Google Cloud Platform. Proficient in containerization technologies such as Docker and
+          Kubernetes.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Cloud Infrastructure Engineer</h3>
+        <p>
+          Experience in designing and implementing scalable cloud infrastructure using AWS, Azure,
+          and Google Cloud Platform. Proficient in containerization technologies such as Docker and
+          Kubernetes.
+        </p>
+      </div>
+      <div class="box">
+        <h3>Cloud Infrastructure Engineer</h3>
+        <p>
+          Experience in designing and implementing scalable cloud infrastructure using AWS, Azure,
+          and Google Cloud Platform. Proficient in containerization technologies such as Docker and
+          Kubernetes.
+        </p>
+      </div>
+    </div>
     </div>
   </div>
 </template>
-
 <script setup lang="ts"></script>
 
 <style scoped>
@@ -53,64 +65,57 @@
   padding: 0 20px;
   margin: 50px 0;
 }
-.welcome {
-  color: #0db760;
-  border: #0db760 1px solid;
-  width: fit-content;
-  padding: 7px 5px;
-  border-radius: 100%;
-}
-button {
-  border: 1px solid #0db760;
-  text-align: center;
-  padding: 15px 26px;
-  border-radius: 10px;
-  background-color: #0db760;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .content {
   display: flex;
-  /* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: space-between;
   font-family: var(--font-family);
   max-width: var(--max-content-width);
   margin: auto;
-  align-content: center;
 }
-.skills-intro,
-.skills-block {
-  flex: 1;
+.box-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 30px auto;
 }
-.skills-block {
+.box {
+  border: 2px solid #0db760;
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 0px #0db760;
+  background-color: rgba(13, 183, 96, 0.05);
+  
+}
+.box:hover {
+  background-color: rgba(13, 183, 96, 0.1); 
+  transform: translateY(-3px);
+}
+.box h3 {
+  color: #0db760;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.welcome {
+  color: #0db760;
+  border: 1px solid #0db760;
+  border-radius: 50%;
+  padding: 7px 5px;
+  padding-bottom: 5px; /* Space between the text and the border */
+  text-align: center; /* Center text within its container */
+  margin: 0 auto; /* Center the element within its parent container */
+  width: fit-content; /* Wrap the width to the content */
+}
+.header-texts {
   display: flex;
   flex-direction: column;
-}
-.group.end {
-  align-self: flex-end;
-}
-
-@media (max-width: 960px) {
-  .content {
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
-    font-family: var(--font-family);
-    max-width: var(--max-content-width);
-    margin: auto;
-    align-content: center;
-  }
-  p {
-    font-size: 22px;
-  }
-  .skills-intro {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
 }
 </style>

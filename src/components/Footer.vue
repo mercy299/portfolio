@@ -4,7 +4,7 @@
       <hr width="100%" />
       <div class="flex-content">
         <p>@2022.All Rights Reserved</p>
-        <p>Designed by Tanvir Ahmed</p>
+        <p>Aniekeme Samuel</p>
         <div class="socials">
           <a href="https://www.facebook.com/your-profile" target="_blank">
             <img src="../assets/Facebook logo.svg" alt="Facebook" />
