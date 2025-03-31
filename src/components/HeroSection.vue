@@ -11,9 +11,9 @@
           </span>
           Cloud
         </h2>
-        <p>
-          Results-driven Linux System Administrator, Cloud, and DevOps Engineer <br/> dedicated to
-          harnessing cutting-edge technologies to drive innovation, <br/>enhance efficiency, and optimize
+        <p class="textss">
+          Results-driven Linux System Administrator, Cloud, and DevOps Engineer  dedicated to
+          harnessing cutting-edge technologies to drive innovation, enhance efficiency, and optimize
           infrastructure performance.
         </p>
         <div>
@@ -41,6 +41,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+}
+.textss {
+  font-size: 18px;
 }
 
 .black-border {

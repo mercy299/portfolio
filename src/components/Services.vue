@@ -2,7 +2,7 @@
   <div class="skills-container">
     <div class="content">
       <div class="skills-intro">
-        <p class="welcome">My Services</p>
+        <p class="welcome">Services</p>
         <h2>
           I manage
           <span style="color: #0db760">containerized <br /> </span>

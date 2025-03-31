@@ -2,16 +2,16 @@
   <div class="review-container">
     <div class="content">
       <div class="group">
-        <h2>80+</h2>
-        <p>Satisfied Clients</p>
+        <h2>3+</h2>
+        <p>Years of Experience</p>
       </div>
       <div class="group bordered">
-        <h2>200+</h2>
+        <h2>20+</h2>
         <p>Projects Completed</p>
       </div>
       <div class="group">
-        <h2>99+</h2>
-        <p>Reviews Given</p>
+        <h2>200+</h2>
+        <p>Code Commits</p>
       </div>
     </div>
   </div>

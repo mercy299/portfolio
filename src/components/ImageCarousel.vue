@@ -21,16 +21,16 @@
 
 <script setup>
 // Import local images
-import img1 from '../assets/Personal Portfolio Design.svg'
-import img2 from '../assets/Personal Portfolio Design.svg'
-import img3 from '../assets/Personal Portfolio Design.svg'
-import img4 from '../assets/Personal Portfolio Design.svg'
-import img5 from '../assets/Personal Portfolio Design.svg'
+import img1 from '../assets/image-blog-1.png'
+import img2 from '../assets/image-blog-2.png'
+import img3 from '../assets/image-blog-3.png'
+import img4 from '../assets/image-blog-4.png'
+// import img5 from '../assets/Personal Portfolio Design.svg'
 
 import { ref, onMounted, nextTick } from 'vue'
 
 // Array of images
-const images = [img1, img2, img3, img4, img5]
+const images = [img1, img2, img3, img4]
 
 // Reactive state for current index
 const currentIndex = ref(0)
@@ -110,6 +110,7 @@ onMounted(() => {
 .carousel-image {
   width: 100%;
   height: 100%;
+  max-height: 350px;
   object-fit: cover;
   border-radius: 10px;
 }
