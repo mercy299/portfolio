@@ -12,7 +12,7 @@ import Contact from '@/components/Contact.vue'
   <main>
     <HeroSection  />
     <Review id="review"/>
-    <Services  id="skills"/>
+    <Services  id="services"/>
     <Skills  id="skills"/>
     <Portfolio  id="portfolio"/>
     <!-- <CustomerReview  id="custormerreview"/> -->

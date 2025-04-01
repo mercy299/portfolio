@@ -12,7 +12,7 @@
           Cloud
         </h2>
         <p class="textss">
-          Results-driven Linux System Administrator, Cloud, and DevOps Engineer  dedicated to
+          Results-driven Linux System Administrator, Cloud, and DevOps Engineer dedicated to
           harnessing cutting-edge technologies to drive innovation, enhance efficiency, and optimize
           infrastructure performance.
         </p>
@@ -59,7 +59,7 @@
   width: 390px;
   height: 390px;
   top: 119px;
-  right: 55px;
+  left: 25px;
   border: 5px solid #000000;
   border-radius: 2px;
   pointer-events: none;
@@ -122,7 +122,7 @@ h2 {
 /* Responsive Styles */
 @media (min-width: 960px) and (max-width: 1173px) {
   .black-border {
-    right: 30px;
+    left: 10px;
   }
 
   p {
@@ -162,8 +162,8 @@ h2 {
   .black-border {
     width: 350px;
     height: 350px;
-    top: 100px;
-    right: 100px;
+    top: 120px;
+    left: -50px;
   }
 
   .image img {
@@ -232,8 +232,8 @@ h2 {
   .black-border {
     width: 250px;
     height: 250px;
-    top: 70px;
-    right: 30px;
+    top: 90px;
+    left: -30px;
   }
 
   .image img {

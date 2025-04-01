@@ -7,7 +7,7 @@
           My creative Works <br />
           <span style="color: #0db760">Latest Projects </span>
         </h2>
-        <p>I have selected and mentioned here some of my latest projects to share with you.</p>
+        <p>I have selected and mentioned here some of my latest blog projects to share with you.</p>
         <div>
           <button><RouterLink to="/cv"> Show More</RouterLink></button>
         </div>
