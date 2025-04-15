@@ -9,7 +9,7 @@
         </h2>
         <p>I have selected and mentioned here some of my latest blog projects to share with you.</p>
         <div>
-          <button><RouterLink to="/cv"> Show More</RouterLink></button>
+          <button><RouterLink to="/"> Show More</RouterLink></button>
         </div>
       </div>
 

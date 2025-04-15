@@ -9,7 +9,9 @@
         :class="{ active: index === currentIndex }"
         :style="getSlideStyle(index)"
       >
-        <img :src="image" alt="Slide Image" class="carousel-image" />
+        <a :href="image.link" target="_blank" rel="noopener noreferrer">
+          <img :src="image.src" alt="Slide Image" class="carousel-image" />
+        </a>
       </div>
     </div>
 
@@ -30,7 +32,12 @@ import img4 from '../assets/image-blog-4.png'
 import { ref, onMounted, nextTick } from 'vue'
 
 // Array of images
-const images = [img1, img2, img3, img4]
+const images = [
+  { src: img1, link: 'https://10xannie.hashnode.dev/best-practices-for-cloud-production' },
+  { src: img2, link: 'https://10xannie.hashnode.dev/configuration-management-in-cloud-production' },
+  { src: img3, link: 'https://10xannie.hashnode.dev/secrets-management-in-cloud-production' },
+  { src: img4, link: 'https://10xannie.hashnode.dev/cicd-pipelines-for-production' },
+]
 
 // Reactive state for current index
 const currentIndex = ref(0)
@@ -63,7 +70,8 @@ const scrollToItem = (index) => {
     if (carouselRef.value) {
       const slides = carouselRef.value.querySelectorAll('.carousel-slide')
       const activeSlide = slides[index]
-      const offset = activeSlide.offsetLeft - (carouselRef.value.offsetWidth - activeSlide.offsetWidth) / 2
+      const offset =
+        activeSlide.offsetLeft - (carouselRef.value.offsetWidth - activeSlide.offsetWidth) / 2
       carouselRef.value.scrollLeft = offset
     }
   })

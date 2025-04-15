@@ -3,7 +3,7 @@
     <div class="content">
       <hr width="100%" />
       <div class="flex-content">
-        <p>@2022.All Rights Reserved</p>
+        <p>@2024.All Rights Reserved</p>
         <p>Aniekeme Samuel</p>
         <div class="socials">
           <a href="https://www.facebook.com/your-profile" target="_blank">

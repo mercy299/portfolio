@@ -22,7 +22,7 @@
       </div>
       <div class="image">
         <div class="green-overlay"></div>
-        <img src="../assets/Personal Portfolio Design.svg" alt="hero-img" />
+        <img src="../assets/linkedin-image.jpeg" alt="hero-img" />
         <div class="black-border"></div>
       </div>
     </div>
@@ -68,7 +68,9 @@
 
 .image img {
   width: 380px;
+  position: absolute;
   z-index: 2;
+  top: 100px;
 }
 
 .green-overlay {
@@ -130,27 +132,54 @@ h2 {
   }
 }
 
-@media (min-width: 800px) and (max-width: 960px) {
+@media (min-width: 801px) and (max-width: 960px) {
   .content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .black-border {
-    right: 220px;
-  }
-
   .texts {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  p {
-    font-size: 22px;
+  .image img {
+    width: 320px;
+    top: 90px;
+  }
+
+  .black-border {
+    width: 330px;
+    height: 330px;
+    top: 90px;
+    left: 0;
+  }
+
+  .green-overlay {
+    width: 320px;
+    height: 310px;
+    top: 90px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .textss {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+  .image {
+    display: none;
   }
 }
+
 
 @media (min-width: 760px) and (max-width: 800px) {
   .content {
@@ -163,11 +192,12 @@ h2 {
     width: 350px;
     height: 350px;
     top: 120px;
-    left: -50px;
+    left: -250px;
   }
 
   .image img {
     width: 350px;
+    top: 90px;
   }
 
   .green-overlay {
@@ -229,22 +259,23 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .black-border {
+  /* .black-border {
     width: 250px;
     height: 250px;
     top: 90px;
-    left: -30px;
+    left: -170px;
   }
 
   .image img {
     width: 250px;
+    top: 60px;
   }
 
   .green-overlay {
     width: 250px;
     height: 240px;
     top: 60px;
-  }
+  } */
 
   h2 {
     font-size: 28px;
@@ -257,6 +288,9 @@ h2 {
   button {
     padding: 10px 18px;
     font-size: 12px;
+  }
+  .image{
+    display: none;
   }
 }
 </style>

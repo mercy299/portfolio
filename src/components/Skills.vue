@@ -3,7 +3,7 @@
     <div class="content">
       <div class="header-texts">
         <p class="welcome">Skills</p>
-        <h2>Our customers say <span style="color: #0db760">Something </span></h2>
+        <h2>Areas of Technical <span style="color: #0db760">Proficiency </span></h2>
       </div>
       <div class="box-group">
         <div class="box">
@@ -105,11 +105,12 @@
   box-sizing: border-box;
   box-shadow: 0px 0px 3px 0px #0db760;
   background-color: rgba(13, 183, 96, 0.05);
+  transition: all 0.3s ease-in-out;
 }
 .box:hover {
-  transform: translateY(-3px);
+  transform: scale(1.03);
   background-color: #0db760;
-  transition: 0.3s;
+  box-shadow: 0px 8px 20px rgba(13, 183, 96, 0.4);
 }
 .box:hover, .box:hover h3 {
   color: white;
