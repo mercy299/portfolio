@@ -96,6 +96,7 @@ const submitForm = () => {
   justify-content: center;
   align-items: center;
 }
+
 button {
   border: 1px solid #0db760;
   text-align: center;

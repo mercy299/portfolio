@@ -13,7 +13,7 @@
           workflows, and solving challenges<br/> through automation and cloud engineering.
         </p>
         <div>
-          <button><RouterLink to="#contact"> Hire Me</RouterLink></button>
+          <RouterLink to="#contact" class="contact-btn"> Hire Me</RouterLink>
         </div>
       </div>
       <div class="skills-block">
@@ -59,13 +59,24 @@
   padding: 7px 5px;
   border-radius: 100%;
 }
-button {
+
+.contact-btn {
+  display: inline-block;
   border: 1px solid #0db760;
   text-align: center;
   padding: 15px 26px;
   border-radius: 10px;
   background-color: #0db760;
+  color: white;
+  text-decoration: none;
 }
+/* button {
+  border: 1px solid #0db760;
+  text-align: center;
+  padding: 15px 26px;
+  border-radius: 10px;
+  background-color: #0db760;
+} */
 a {
   text-decoration: none;
   color: white;

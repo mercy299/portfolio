@@ -17,7 +17,7 @@
           scalable systems and leveraging modern tools to drive innovation and efficiency.
         </p>
         <div>
-          <button><RouterLink to="#contact"> Contact Me</RouterLink></button>
+          <RouterLink to="#contact" class="contact-btn"> Contact Me</RouterLink>
         </div>
       </div>
       <div class="image">
@@ -83,12 +83,22 @@
   border-radius: 2px;
 }
 
-button {
+/* button {
   border: 1px solid #0db760;
   text-align: center;
   padding: 15px 26px;
   border-radius: 10px;
   background-color: #0db760;
+} */
+.contact-btn {
+  display: inline-block;
+  border: 1px solid #0db760;
+  text-align: center;
+  padding: 15px 26px;
+  border-radius: 10px;
+  background-color: #0db760;
+  color: white;
+  text-decoration: none;
 }
 
 a {

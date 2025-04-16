@@ -5,11 +5,19 @@
         <p class="welcome">Portfolio</p>
         <h2>
           My creative Works <br />
-          <span style="color: #0db760">Latest Projects </span>
+          <span style="color: #0db760">Latest Blog Projects </span>
         </h2>
         <p>I have selected and mentioned here some of my latest blog projects to share with you.</p>
         <div>
-          <button><RouterLink to="/"> Show More</RouterLink></button>
+          <!-- <RouterLink to="#contact" class="contact-btn"> Show More</RouterLink>   -->
+          <a
+            href="https://10xannie.hashnode.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="blog-btn"
+          >
+            Visit My Blog
+          </a>
         </div>
       </div>
 
@@ -38,14 +46,45 @@ import ImageCarousel from '@/components/ImageCarousel.vue'
   padding: 7px 5px;
   border-radius: 100%;
 }
+.blog-btn {
+  display: inline-block;
+  padding: 15px 26px;
+  background-color: #0db760;
+  color: white;
+  border: 1px solid #0db760;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(13, 183, 96, 0.2);
+}
 
-button {
+.blog-btn:hover {
+  background-color: #0aa350;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(13, 183, 96, 0.3);
+}
+
+
+/* .contact-btn {
+  display: inline-block;
   border: 1px solid #0db760;
   text-align: center;
   padding: 15px 26px;
   border-radius: 10px;
   background-color: #0db760;
-}
+  color: white;
+  text-decoration: none;
+} */
+
+/* button {
+  border: 1px solid #0db760;
+  text-align: center;
+  padding: 15px 26px;
+  border-radius: 10px;
+  background-color: #0db760;
+} */
 
 a {
   text-decoration: none;
