@@ -100,6 +100,11 @@
   color: white;
   text-decoration: none;
 }
+.contact-btn:hover {
+  background-color: #0aa350;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(13, 183, 96, 0.3);
+}
 
 a {
   text-decoration: none;
