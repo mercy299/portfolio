@@ -12,9 +12,9 @@
           Cloud
         </h2>
         <p class="textss">
-          Results-driven Linux System Administrator, Cloud, and DevOps Engineer dedicated to
-          harnessing cutting-edge technologies to drive innovation, enhance efficiency, and optimize
-          infrastructure performance.
+          Results-driven Linux System Administrator and DevOps Engineer with a strong focus on
+          automation, cloud infrastructure, and performance optimization. I thrive on building
+          scalable systems and leveraging modern tools to drive innovation and efficiency.
         </p>
         <div>
           <button><RouterLink to="#contact"> Contact Me</RouterLink></button>
@@ -180,7 +180,6 @@ h2 {
   }
 }
 
-
 @media (min-width: 760px) and (max-width: 800px) {
   .content {
     flex-direction: column;
@@ -289,7 +288,7 @@ h2 {
     padding: 10px 18px;
     font-size: 12px;
   }
-  .image{
+  .image {
     display: none;
   }
 }
