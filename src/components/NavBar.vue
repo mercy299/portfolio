@@ -1,8 +1,8 @@
 <template>
   <header class="navbar-container">
     <nav class="navbar">
-      <RouterLink to="/" class="logo-link">
-        <img src="../assets/Personal Portfolio Logo.svg" alt="Positivus Logo" class="logo" />
+      <RouterLink to="/" class="welcome">
+        <p> My Portfolio</p>
       </RouterLink>
       <div class="navbar-list-container">
         <ul class="navbar-list">
@@ -47,9 +47,14 @@ const handleDownload = () => {
   font-family: var(--font-family);
   font-weight: 200;
 }
-
-.logo-link {
-  text-decoration: none;
+.welcome {
+  color: #0db760;
+  border: #0db760 1px solid;
+  width: fit-content;
+  padding: 2px 3px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .logo {

@@ -2,7 +2,7 @@
   <div class="hero-container">
     <div class="content">
       <div class="texts">
-        <p class="welcome">Welcome</p>
+        <!-- <p class="welcome">Welcome</p> -->
         <h2>
           Bridging
           <span style="color: #0db760">
@@ -42,6 +42,7 @@
   justify-content: center;
   align-items: center;
   flex: 1;
+  margin-top: -80px;
 }
 .texts {
   display: flex;
@@ -201,6 +202,9 @@ h2 {
     align-items: center;
     text-align: center;
   }
+  .image {
+    display: none;
+  }
 
   .black-border {
     width: 350px;
@@ -246,6 +250,9 @@ h2 {
     height: 300px;
     top: 90px;
     right: 50px;
+  }
+  .image {
+    display: none;
   }
 
   .image img {
