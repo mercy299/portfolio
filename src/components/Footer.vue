@@ -6,9 +6,13 @@
         <p>@2024.All Rights Reserved</p>
         <p>Aniekeme Samuel</p>
         <div class="socials">
-          <a href="https://www.facebook.com/your-profile" target="_blank">
-            <img src="../assets/github-icon.svg"  width="27px" alt="Github" />
+          <a href="https://github.com/mercy299" target="_blank">
+            <img :src="githubIcon" width="27px" alt="Github" />
           </a>
+
+          <!-- <a href="https://github.com/mercy299" target="_blank">
+            <img src="../assets/github-icon.svg"  width="27px" alt="Github" />
+          </a> -->
           <a href="https://twitter.com/your-profile" target="_blank">
             <img src="../assets/Twitter logo.svg" alt="Twitter" />
           </a>
@@ -24,7 +28,10 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import githubIcon from '@/assets/github-icon.svg'
+
+</script>
 
 <style scoped>
 .footer-container {
