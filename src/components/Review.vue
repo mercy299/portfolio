@@ -9,10 +9,16 @@
         <h2>20+</h2>
         <p>Projects Completed</p>
       </div>
-      <div class="group">
-        <h2>200+</h2>
-        <p>Code Commits</p>
-      </div>
+      <a
+        href="https://github.com/mercy299?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="group">
+          <h2>200+</h2>
+          <p>Code Commits</p>
+        </div>
+      </a>
     </div>
   </div>
 </template>
