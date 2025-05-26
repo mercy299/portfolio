@@ -8,13 +8,12 @@
         <ul class="navbar-list">
           <li><RouterLink to="#review"> Review </RouterLink></li>
           <li><RouterLink to="#services"> Services</RouterLink></li>
-          <li><RouterLink to="#portfolio"> Portfolio</RouterLink></li>
+          <li><RouterLink to="#blog"> Blog</RouterLink></li>
           <li><RouterLink to="#skills"> Skills</RouterLink></li>
         </ul>
       </div>
-      <button @click="handleDownload">
-        <RouterLink to="/"> Download CV</RouterLink>
-      </button>
+      <button @click="handleDownload">Download CV</button>
+
     </nav>
   </header>
 </template>
@@ -33,7 +32,7 @@ const handleDownload = () => {
 };
 </script>
 
-<style scoped>
+<style >
 .navbar-container {
   padding: 0 20px;
 }
@@ -81,15 +80,16 @@ button {
   padding: 15px 26px;
   border-radius: 10px;
   background-color: transparent;
+  color: black;
+  cursor: pointer;
 }
+
 button:hover {
   background-color: #0db760;
-  transition: 0.3s;
-  /* padding: 15px 26px; */
-}
-button:hover a {
   color: white;
+  transition: 0.3s;
 }
+
 @media (min-width: 100px) and (max-width: 826px) {
   .navbar-container {
     max-width: 767px;

@@ -2,7 +2,7 @@
   <div class="portfolio-container">
     <div class="content">
       <div class="portfolio-intro">
-        <p class="welcome">Portfolio</p>
+        <p class="welcome">Blog</p>
         <h2>
           My creative Works <br />
           <span style="color: #0db760">Latest Blog Projects </span>

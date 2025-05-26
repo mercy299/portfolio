@@ -7,7 +7,7 @@
         <p>Aniekeme Samuel</p>
         <div class="socials">
           <a href="https://www.facebook.com/your-profile" target="_blank">
-            <img src="../assets/Facebook logo.svg" alt="Facebook" />
+            <img src="../assets/github-icon.svg"  width="27px" alt="Facebook" />
           </a>
           <a href="https://twitter.com/your-profile" target="_blank">
             <img src="../assets/Twitter logo.svg" alt="Twitter" />
