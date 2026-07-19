@@ -8,4 +8,4 @@ import HeroSection from '@/components/HeroSection.vue'
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

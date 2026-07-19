@@ -19,19 +19,19 @@
         </p>
         <div class="social-links">
           <a href="https://github.com" target="_blank">
-            <img src="@/assets/new-github.svg" width="27px" alt="GitHub" />
+            <ProductIcon icon="Github" width="27px" />
           </a>
 
           <a href="https://linkedin.com" target="_blank">
-            <img src="@/assets/new-linkedin.svg" width="27px" alt="LinkedIn" />
+            <ProductIcon icon="Linkedin" width="27px" />
           </a>
 
           <a href="https://twitter.com" target="_blank">
-            <img src="@/assets/new-twitter.svg" width="27px" alt="Twitter" />
+            <ProductIcon icon="Twitter" width="27px" />
           </a>
 
-          <a href="mailto:hello@example.com">
-            <img src="@/assets/new-hashnode.svg" width="27px" alt="Hashnode" />
+          <a href="mailto:hello@example.com" >
+            <ProductIcon icon="Hashnode" width="27px" />
           </a>
         </div>
       </div>
@@ -42,7 +42,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ProductIcon from './ProductIcon.vue'
+</script>
 
 <style scoped>
 .hero-container {
@@ -50,7 +52,6 @@
 }
 
 .image {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,22 +73,6 @@
 
 .image img {
   width: 100%;
-  /* position: absolute; */
-  /* z-index: 2; */
-}
-
-/* button {
-  border: 1px solid #0db760;
-  text-align: center;
-  padding: 15px 26px;
-  border-radius: 10px;
-  background-color: #0db760;
-} */
-
-.contact-btn:hover {
-  background-color: #0aa350;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(13, 183, 96, 0.3);
 }
 
 a {
@@ -113,14 +98,6 @@ h2 {
   width: 380px;
 }
 
-.welcome {
-  color: #0db760;
-  border: #0db760 1px solid;
-  width: fit-content;
-  padding: 7px 5px;
-  border-radius: 100%;
-}
-
 .social-links {
   display: flex;
   gap: 16px;
@@ -136,16 +113,13 @@ h2 {
   align-items: center;
   text-decoration: none;
   transition: 0.3s;
+  color: black;
 }
 
 .social-links a:hover {
-  background: #f5f5f5;
-  border-color: #333;
-}
-
-.social-links img {
-  width: 24px;
-  height: 24px;
+  background: black;
+  color: #ffffff;
+  /* border-color: white; */
 }
 
 .black-text {
@@ -161,9 +135,6 @@ h2 {
 
 /* Responsive Styles */
 @media (min-width: 960px) and (max-width: 1173px) {
-  .black-border {
-    left: 10px;
-  }
 
   p {
     font-size: 22px;
@@ -185,19 +156,6 @@ h2 {
 
   .image img {
     width: 320px;
-    top: 90px;
-  }
-
-  .black-border {
-    width: 330px;
-    height: 330px;
-    top: 90px;
-    left: 0;
-  }
-
-  .green-overlay {
-    width: 320px;
-    height: 310px;
     top: 90px;
   }
 
@@ -226,13 +184,6 @@ h2 {
   }
   .image {
     display: none;
-  }
-
-  .black-border {
-    width: 350px;
-    height: 350px;
-    top: 120px;
-    left: -250px;
   }
 
   .image img {

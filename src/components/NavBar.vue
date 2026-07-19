@@ -3,7 +3,7 @@
     <nav class="navbar">
       <RouterLink to="/" class="welcome">
         <p>
-          <img src="@/assets/personal-dark.svg" alt="Profile logo: dark" />
+          <PersonalDark />
         </p>
       </RouterLink>
       <div class="navbar-list-container">
@@ -21,6 +21,7 @@
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import PersonalDark from '@/assets/personal-dark.svg'
 
 const handleDownload = () => {
   const filePath = '/cv.pdf'

@@ -4,7 +4,7 @@
       <hr width="100%" />
       <div class="flex-content">
         <p>
-          <img src="@/assets/personal-light.svg" alt="Profile logo: light" />
+          <PersonalLight />
         </p>
         <p>@2018-2026. Personal</p>
 
@@ -32,7 +32,8 @@
 </template>
 
 <script setup lang="ts">
-import githubIcon from '@/assets/github-icon.svg'
+import PersonalLight from '@/assets/personal-light.svg'
+
 </script>
 
 <style scoped>
