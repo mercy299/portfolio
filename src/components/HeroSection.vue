@@ -4,26 +4,39 @@
       <div class="texts">
         <!-- <p class="welcome">Welcome</p> -->
         <h2>
-          Bridging
-          <span style="color: #0db760">
-            Code<br />
-            And
+          Hello, I'm <span class="black-text">Aniekeme</span>.
+          <span class="black-text">
+            DevOps
+            <span class="outline-text">Engineer</span>
           </span>
-          Cloud
+          <br />
+          Based in <span class="black-text">Nigeria</span>.
         </h2>
-        <p class="textss">
+        <p class="bio-text">
           Results-driven Linux System Administrator and DevOps Engineer with a strong focus on
           automation, cloud infrastructure, and performance optimization. I thrive on building
           scalable systems and leveraging modern tools to drive innovation and efficiency.
         </p>
-        <div>
-          <RouterLink to="#contact" class="contact-btn"> Contact Me</RouterLink>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank">
+            <img src="@/assets/new-github.svg" width="27px" alt="GitHub" />
+          </a>
+
+          <a href="https://linkedin.com" target="_blank">
+            <img src="@/assets/new-linkedin.svg" width="27px" alt="LinkedIn" />
+          </a>
+
+          <a href="https://twitter.com" target="_blank">
+            <img src="@/assets/new-twitter.svg" width="27px" alt="Twitter" />
+          </a>
+
+          <a href="mailto:hello@example.com">
+            <img src="@/assets/new-hashnode.svg" width="27px" alt="Hashnode" />
+          </a>
         </div>
       </div>
       <div class="image">
-        <div class="green-overlay"></div>
-        <img src="../assets/linkedin-image.jpeg" alt="hero-img" />
-        <div class="black-border"></div>
+        <img src="../assets/girl.svg" alt="hero-img" />
       </div>
     </div>
   </div>
@@ -42,46 +55,25 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin-top: -80px;
 }
 .texts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  gap: 20px;
+  gap: 10px;
 }
-.textss {
-  font-size: 18px;
-}
-
-.black-border {
-  position: absolute;
-  width: 390px;
-  height: 390px;
-  top: 119px;
-  left: 25px;
-  border: 5px solid #000000;
-  border-radius: 2px;
-  pointer-events: none;
-  z-index: 1;
+.bio-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #717171;
+  font-weight: 300;
 }
 
 .image img {
-  width: 380px;
-  position: absolute;
-  z-index: 2;
-  top: 100px;
-}
-
-.green-overlay {
-  position: absolute;
-  background-color: #0db760;
-  width: 380px;
-  height: 370px;
-  z-index: 1;
-  top: 100px;
-  border-radius: 2px;
+  width: 100%;
+  /* position: absolute; */
+  /* z-index: 2; */
 }
 
 /* button {
@@ -91,16 +83,7 @@
   border-radius: 10px;
   background-color: #0db760;
 } */
-.contact-btn {
-  display: inline-block;
-  border: 1px solid #0db760;
-  text-align: center;
-  padding: 15px 26px;
-  border-radius: 10px;
-  background-color: #0db760;
-  color: white;
-  text-decoration: none;
-}
+
 .contact-btn:hover {
   background-color: #0aa350;
   transform: translateY(-2px);
@@ -121,8 +104,9 @@ a {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 48px;
   margin: 0px;
+  font-weight: 400;
 }
 
 .image img {
@@ -135,6 +119,44 @@ h2 {
   width: fit-content;
   padding: 7px 5px;
   border-radius: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links a {
+  width: 56px;
+  height: 56px;
+  border: 2px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #f5f5f5;
+  border-color: #333;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+.black-text {
+  font-weight: 800;
+  color: #000;
+}
+
+.outline-text {
+  font-weight: 800;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
 }
 
 /* Responsive Styles */
@@ -183,7 +205,7 @@ h2 {
     font-size: 42px;
   }
 
-  .textss {
+  .bio-text {
     font-size: 20px;
   }
 

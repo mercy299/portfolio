@@ -1,5 +1,5 @@
 <template>
-  <div class="review-container">
+  <div class="about-me-container">
     <div class="content">
       <div class="group">
         <h2>4+</h2>
@@ -26,7 +26,7 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-.review-container {
+.about-me-container {
   padding: 0 20px;
   margin: 100px 0;
 }

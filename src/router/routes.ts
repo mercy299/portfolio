@@ -1,5 +1,5 @@
 import DefaultLayout from '../components/Layouts/DefaultLayout.vue'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView2.vue'
 
 const router = [
   {
@@ -8,7 +8,7 @@ const router = [
     children: [
       {
         path: '/',
-        name: 'home',
+        name: 'home2',
         component: HomeView,
       },
       {
