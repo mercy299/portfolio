@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import PersonalLight from '@/assets/personal-light.svg'
+import PersonalLight from '@/assets/images/personal-light.svg'
 
 </script>
 

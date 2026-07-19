@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import PersonalDark from '@/assets/personal-dark.svg'
+import PersonalDark from '@/assets/images/personal-dark.svg'
 
 const handleDownload = () => {
   const filePath = '/cv.pdf'
