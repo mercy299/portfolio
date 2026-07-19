@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="image">
-        <img src="../assets/girl.svg" alt="hero-img" />
+        <img src="../assets/images/girl.svg" alt="hero-img" />
       </div>
     </div>
   </div>
