@@ -1,30 +1,40 @@
 <template>
   <div class="portfolio-container">
     <div class="content">
+
+      <!-- Left: Introduction -->
       <div class="portfolio-intro">
-        <p class="welcome">Blog</p>
+
+        <p class="welcome">
+          My <span>Blogs</span>
+        </p>
+
         <h2>
-          My creative Works <br />
-          <span style="color: #0db760">Latest Blog Projects </span>
+          My Creative <br />
+          Works
         </h2>
-        <p>I have selected and mentioned here some of my latest blog projects to share with you.</p>
-        <div>
-          <!-- <RouterLink to="#contact" class="contact-btn"> Show More</RouterLink>   -->
-          <a
-            href="https://10xannie.hashnode.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="blog-btn"
-          >
-            Visit My Blog
-          </a>
-        </div>
+
+        <p class="description">
+          I have selected and mentioned here some of my latest blog
+          projects to share with you.
+        </p>
+
+        <a
+          href="https://10xannie.hashnode.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="blog-btn"
+        >
+          Visit My Blog
+        </a>
+
       </div>
 
-      <!-- Works Carousel Section -->
+      <!-- Right: Carousel -->
       <div class="works-carousel">
         <ImageCarousel />
       </div>
+
     </div>
   </div>
 </template>
@@ -35,102 +45,151 @@ import ImageCarousel from '@/components/ImageCarousel.vue'
 
 <style scoped>
 .portfolio-container {
-  padding: 0 20px;
-  margin: 50px 0;
-}
-
-.welcome {
-  color: #0db760;
-  border: #0db760 1px solid;
-  width: fit-content;
-  padding: 7px 5px;
-  border-radius: 100%;
-}
-.blog-btn {
-  display: inline-block;
-  padding: 15px 26px;
-  background-color: #0db760;
-  color: white;
-  border: 1px solid #0db760;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(13, 183, 96, 0.2);
-}
-
-.blog-btn:hover {
-  background-color: #0aa350;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(13, 183, 96, 0.3);
-}
-
-
-/* .contact-btn {
-  display: inline-block;
-  border: 1px solid #0db760;
-  text-align: center;
-  padding: 15px 26px;
-  border-radius: 10px;
-  background-color: #0db760;
-  color: white;
-  text-decoration: none;
-} */
-
-/* button {
-  border: 1px solid #0db760;
-  text-align: center;
-  padding: 15px 26px;
-  border-radius: 10px;
-  background-color: #0db760;
-} */
-
-a {
-  text-decoration: none;
-  color: white;
+  padding: 80px 20px;
+  margin: 0;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
   font-family: var(--font-family);
   max-width: var(--max-content-width);
-  margin: auto;
-  align-content: center;
+  margin: 0 auto;
 }
+
+/* LEFT SIDE */
 
 .portfolio-intro {
   flex: 1;
+  max-width: 500px;
 }
 
+.welcome {
+  display: inline-block;
+
+  font-size: 18px;
+  font-weight: 400;
+
+  margin: 0 0 25px;
+
+  border: 1px solid black;
+  border-radius: 50px;
+
+  padding: 8px 18px;
+}
+
+.welcome span {
+  font-weight: 800;
+}
+
+.portfolio-intro h2 {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 600;
+
+  margin: 0 0 25px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.7;
+
+  max-width: 450px;
+
+  margin: 0 0 30px;
+}
+
+/* BUTTON */
+
+.blog-btn {
+  display: inline-block;
+
+  padding: 15px 26px;
+
+  background-color: black;
+  color: white;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.blog-btn:hover {
+  background-color: white;
+  color: black;
+
+  transform: translateY(-2px);
+}
+
+/* RIGHT SIDE */
+
 .works-carousel {
-  flex: 1; /* Carousel takes equal space */
+  flex: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  min-width: 0;
 }
+
+/* TABLET */
 
 @media (max-width: 960px) {
   .content {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-family: var(--font-family);
-    max-width: var(--max-content-width);
-    margin: auto;
-    align-content: center;
+    gap: 50px;
   }
 
-  p {
-    font-size: 22px;
-  }
   .portfolio-intro {
+    max-width: 700px;
+
     display: flex;
     flex-direction: column;
+
     text-align: center;
-    justify-content: center;
     align-items: center;
+  }
+
+  .portfolio-intro h2 {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .works-carousel {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 60px 16px;
+  }
+
+  .portfolio-intro h2 {
+    font-size: 38px;
+  }
+
+  .welcome {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
   }
 }
 </style>

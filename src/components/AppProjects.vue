@@ -12,11 +12,12 @@
 
         <div class="project-content">
           <span class="project-number">01</span>
-          <h3>Project Name One</h3>
+          <h3>Production Kubernetes Platform</h3>
           <p>
-            This project is a brief description of the work completed,
-            the problem it solves, and the technologies used to build
-            and deliver the solution successfully.
+            Designed and deployed a containerized machine learning microservice on AWS EKS using
+            Docker and Kubernetes. Built an automated container delivery workflow with AWS CodeBuild
+            and ECR, integrated PostgreSQL for persistent data, and implemented CloudWatch
+            monitoring for application visibility and operational reliability.
           </p>
         </div>
       </div>
@@ -29,11 +30,12 @@
 
         <div class="project-content">
           <span class="project-number">02</span>
-          <h3>Project Name Two</h3>
+          <h3>Infrastructure Automation with Terraform</h3>
           <p>
-            This project focuses on creating a reliable and scalable
-            solution while maintaining a clean user experience and
-            making the system easy to manage and maintain.
+            Designed and automated cloud infrastructure provisioning using Terraform, enabling
+            repeatable and version-controlled deployments. Implemented networking, security
+            controls, and scalable infrastructure configurations while reducing manual provisioning
+            and configuration inconsistencies.
           </p>
         </div>
       </div>
@@ -46,21 +48,20 @@
 
         <div class="project-content">
           <span class="project-number">03</span>
-          <h3>Project Name Three</h3>
+          <h3>Cloud-Native Monitoring and Observability Stack</h3>
           <p>
-            This project demonstrates the use of modern technologies
-            to solve a real-world problem, with an emphasis on
-            performance, scalability, automation, and reliability.
+            Implemented an observability solution using Prometheus and Grafana to monitor
+            infrastructure and application performance. Configured metrics collection and dashboards
+            to improve visibility into system health, resource utilization, and service
+            availability.
           </p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .projects {

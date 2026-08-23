@@ -1,7 +1,6 @@
 <template>
   <div class="footer-container">
     <div class="content">
-      <hr width="100%" />
       <div class="flex-content">
         <p>
           <PersonalLight />

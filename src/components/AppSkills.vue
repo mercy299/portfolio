@@ -10,40 +10,40 @@
           Git
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Docker" width="27px" />
+          Docker
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Kubernetes" width="27px" />
+          Kubernetes
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Terraform" width="27px" />
+          Terraform
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Aws" width="27px" />
+          Aws
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="GithubActions" width="27px" />
+          Github Actions
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="ArgoCD" width="27px" />
+          ArgoCD
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Prometheus" width="27px" />
+          Prometheus
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Linux" width="27px" />
+          Linux
         </a>
         <a href="https://github.com" target="_blank">
-          <ProductIcon icon="Github" width="27px" />
-          Git
+          <ProductIcon icon="Bash" width="27px" />
+          Bash
         </a>
       </div>
     </div>

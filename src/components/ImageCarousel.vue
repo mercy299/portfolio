@@ -21,12 +21,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Import local images
-import img1 from '../assets/image-blog-1.png'
-import img2 from '../assets/image-blog-2.png'
-import img3 from '../assets/image-blog-3.png'
-import img4 from '../assets/image-blog-4.png'
+import img1 from '../assets/images/articles/image-blog-1.png'
+import img2 from '../assets/images/articles/image-blog-2.png'
+import img3 from '../assets/images/articles/image-blog-3.png'
+import img4 from '../assets/images/articles/image-blog-4.png'
 // import img5 from '../assets/Personal Portfolio Design.svg'
 
 import { ref, onMounted, nextTick } from 'vue'
@@ -43,10 +43,10 @@ const images = [
 const currentIndex = ref(0)
 
 // Create a ref for the carousel container
-const carouselRef = ref(null)
+const carouselRef = ref<HTMLDivElement | null>(null)
 
 // Function to calculate the style for each slide based on its position
-const getSlideStyle = (index) => {
+const getSlideStyle = (index: number) => {
   return index === currentIndex.value
     ? { flex: '0 0 40%', opacity: 1, transform: 'scale(1)' } // Active slide
     : { flex: '0 0 30%', opacity: 0.5, transform: 'scale(0.9)' } // Inactive slides
@@ -65,13 +65,20 @@ const nextSlide = () => {
 }
 
 // Function to scroll to the active item and center it
-const scrollToItem = (index) => {
+const scrollToItem = (index: number) => {
   nextTick(() => {
     if (carouselRef.value) {
-      const slides = carouselRef.value.querySelectorAll('.carousel-slide')
+      const slides =
+        carouselRef.value.querySelectorAll<HTMLElement>('.carousel-slide')
+
       const activeSlide = slides[index]
+
+      if (!activeSlide) return
+
       const offset =
-        activeSlide.offsetLeft - (carouselRef.value.offsetWidth - activeSlide.offsetWidth) / 2
+        activeSlide.offsetLeft -
+        (carouselRef.value.offsetWidth - activeSlide.offsetWidth) / 2
+
       carouselRef.value.scrollLeft = offset
     }
   })

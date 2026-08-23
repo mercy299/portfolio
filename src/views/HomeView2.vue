@@ -5,6 +5,7 @@ import AppExperience from '@/components/AppExperience.vue';
 import AppAboutMe from '@/components/AppAboutMe.vue';
 import AppProjects from '@/components/AppProjects.vue';
 import AppBlog from '@/components/AppBlog.vue';
+import AppContact from '@/components/AppContact.vue';
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import AppBlog from '@/components/AppBlog.vue';
     <AppAboutMe />
     <AppProjects />
     <AppBlog />
+    <AppContact />
   </div>
 </template>
 
