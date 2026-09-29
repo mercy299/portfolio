@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="image">
-        <img src="../assets/images/girl.svg" alt="hero-img" />
+        <GirlImage width="580px" />
       </div>
     </div>
   </div>
@@ -44,6 +44,7 @@
 
 <script setup lang="ts">
 import ProductIcon from './ProductIcon.vue'
+import GirlImage from '../assets/images/girl.svg'
 </script>
 
 <style scoped>
@@ -290,4 +291,7 @@ h2 {
 </style>
 
 
-<!-- test -->
+<!-- test
+- wrong font in my experience.
+- max width on my experience part.
+-->

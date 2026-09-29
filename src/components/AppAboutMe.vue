@@ -3,7 +3,7 @@
     <div class="about-container">
 
       <div class="about-image">
-        <img src="../assets/images/about-me-img.svg" alt="About me" />
+        <AboutMeImage />
       </div>
 
       <!-- Right: Text -->
@@ -47,6 +47,7 @@
 </template>
 
 <script setup lang="ts">
+import AboutMeImage from '../assets/images/about-me-img.svg'
 </script>
 
 <style scoped>

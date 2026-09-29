@@ -54,6 +54,8 @@
   /* align-items: center; */
 }
 .content {
+  max-width: var(--max-content-width);
+  font-family: var(--font-family);
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: center; */
@@ -61,7 +63,7 @@
   /* text-align: center; */
   color: white;
   /* background-color: blue; */
-  width: 80%;
+  /* width: 80%; */
   height: 100%;
   margin: 40px auto;
 }
