@@ -65,7 +65,7 @@
           Let’s
           <span class="outline-text">create</span>
           <br />
-          <span>Something special</span>
+          <span>Something Special</span>
         </h2>
 
         <p class="description">
