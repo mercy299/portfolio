@@ -142,38 +142,47 @@ h2 {
   }
 }
 
-@media (min-width: 801px) and (max-width: 960px) {
+@media (max-width: 760px) {
   .content {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 
   .texts {
+    width: 100%;
     align-items: center;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .image img {
-    width: 320px;
-    top: 90px;
-  }
-
-  h2 {
-    font-size: 42px;
+    text-align: center;
   }
 
   .bio-text {
-    font-size: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-links {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    display: none;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   button {
-    padding: 14px 24px;
-    font-size: 16px;
-  }
-  .image {
-    display: none;
+    padding: 12px 20px;
+    font-size: 14px;
   }
 }
 
