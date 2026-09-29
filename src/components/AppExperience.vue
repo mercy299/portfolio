@@ -7,46 +7,41 @@
       <div class="experience-list">
         <div class="experience-item">
           <div class="experience-item-header">
-            <h3>Chief engineer at google</h3>
-            <i>2019 - 2023</i>
+            <h3>DevOps Engineer at Interswitch</h3>
+            <i>Feb - Present</i>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et velit ab corporis eaque
-            nostrum perspiciatis ad autem laudantium nulla praesentium in molestiae excepturi
-            similique sequi soluta aliquid deleniti, suscipit sunt.50
+            Working on cloud infrastructure, automation, CI/CD pipelines, and scalable application
+            deployments. Supporting the implementation and management of reliable DevOps practices
+            across development and production environments.
           </p>
         </div>
         <div class="experience-item">
           <div class="experience-item-header">
-            <h3>Software Engineer at Amazon</h3>
-            <i>2016 - 2019</i>
+            <h3>DevOps Engineer at Varscon</h3>
+            <i>Dec 2023 - Aug 2025</i>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, recusandae veritatis
-            facere accusantium laboriosam non sequi, nostrum accusamus excepturi quam voluptate
-            tenetur praesentium in beatae nesciunt ab ipsam cumque! Laboriosam cupiditate nulla
-            pariatur alias. Error.
+            Architected and automated AWS cloud infrastructure using Terraform while managing
+            containerized deployments with Docker, ECS, and Kubernetes. Built CI/CD pipelines with
+            GitHub Actions and implemented secure secrets management and cloud security practices.
           </p>
         </div>
         <div class="experience-item">
           <div class="experience-item-header">
-            <h3>Intern at Microsoft</h3>
-            <i>2015 - 2016</i>
+            <h3>DevOps Engineer at Mbag Microfinance Bank</h3>
+            <i>Aug 2024 - Dec 2024</i>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, recusandae veritatis
-            facere accusantium laboriosam non sequi, nostrum accusamus excepturi quam voluptate
-            tenetur praesentium in beatae nesciunt ab ipsam cumque! Laboriosam cupiditate nulla
-            pariatur alias. Error.
+            Automated API deployment workflows using GitHub Actions and implemented infrastructure
+            and application monitoring with Prometheus and Grafana. Improved deployment reliability
+            while strengthening security with GitHub Secrets, Nginx, SSL/TLS, and Let's Encrypt.
           </p>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
 
 <script setup lang="ts"></script>
 
@@ -99,10 +94,10 @@
   background-color: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #71717A;
+  border: 1px solid #71717a;
 }
 .experience-item:hover {
-  background-color: #27272A;
+  background-color: #27272a;
   border: none;
 }
 .experience-item-header {
@@ -110,5 +105,4 @@
   justify-content: space-between;
   align-items: center;
 }
-
 </style>
