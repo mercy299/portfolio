@@ -5,43 +5,43 @@
         <p class="welcome"> My <span class="black-text">Skills</span></p>
       </div>
       <div class="social-links">
-        <a href="https://github.com" target="_blank">
+        <a href="https://git-scm.com/docs" target="_blank">
           <ProductIcon icon="Github" width="27px" />
           Git
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://docs.docker.com/guides/" target="_blank">
           <ProductIcon icon="Docker" width="27px" />
           Docker
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://kubernetes.io/docs/home/supported-doc-versions/" target="_blank">
           <ProductIcon icon="Kubernetes" width="27px" />
           Kubernetes
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://developer.hashicorp.com/terraform/docs" target="_blank">
           <ProductIcon icon="Terraform" width="27px" />
           Terraform
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://docs.aws.amazon.com/" target="_blank">
           <ProductIcon icon="Aws" width="27px" />
           Aws
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://docs.github.com/en/actions" target="_blank">
           <ProductIcon icon="GithubActions" width="27px" />
           Github Actions
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://argo-cd.readthedocs.io/en/stable/" target="_blank">
           <ProductIcon icon="ArgoCD" width="27px" />
           ArgoCD
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://prometheus.io/docs/introduction/overview/" target="_blank">
           <ProductIcon icon="Prometheus" width="27px" />
           Prometheus
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://docs.kernel.org/" target="_blank">
           <ProductIcon icon="Linux" width="27px" />
           Linux
         </a>
-        <a href="https://github.com" target="_blank">
+        <a href="https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html" target="_blank">
           <ProductIcon icon="Bash" width="27px" />
           Bash
         </a>
@@ -110,5 +110,29 @@ import ProductIcon from './ProductIcon.vue'
   background: black;
   color: #ffffff;
   /* border-color: white; */
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .social-links {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .social-links a {
+    flex: 0 0 186px;
+  }
 }
 </style>

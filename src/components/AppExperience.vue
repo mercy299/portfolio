@@ -107,4 +107,60 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 760px) {
+  .experience-container {
+    width: 100%;
+    padding: 60px 20px 40px;
+    box-sizing: border-box;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .header-texts {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .welcome {
+    font-size: 36px;
+    margin: 0 0 30px;
+  }
+
+  .experience-list {
+    width: 100%;
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .experience-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .experience-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .experience-item-header h3 {
+    margin: 0;
+  }
+
+  .experience-item-header i {
+    font-size: 14px;
+  }
+
+  .experience-item p {
+    margin: 0;
+    line-height: 1.6;
+  }
+}
 </style>

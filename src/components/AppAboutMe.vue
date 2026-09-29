@@ -130,55 +130,65 @@ import AboutMeImage from '../assets/images/about-me-img.svg'
 /* MOBILE */
 @media (max-width: 768px) {
   .about-me {
-    padding: 70px 20px;
+    padding: 80px 24px;
   }
 
   .about-container {
-    flex-direction: column;
-    gap: 40px;
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
   }
 
+  /* Hide image on mobile */
   .about-image {
-    width: 100%;
-  }
-
-  .about-image img {
-    width: 100%;
-    height: 450px;
-    min-height: 0;
+    display: none;
   }
 
   .about-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .about-content h3 {
-    font-size: 36px;
-    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0 0 35px;
+    text-align: center;
   }
 
   .about-content p {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.8;
+    margin: 0 0 22px;
+    max-width: none;
+  }
+
+  .about-content p:last-child {
+    margin-bottom: 0;
   }
 }
 
 /* SMALL MOBILE */
 @media (max-width: 480px) {
   .about-me {
-    padding: 50px 16px;
+    padding: 70px 22px;
   }
 
-  .about-image img {
-    height: 350px;
+  .about-container {
+    width: 100%;
   }
 
   .about-content h3 {
-    font-size: 32px;
+    font-size: 34px;
+    margin-bottom: 30px;
   }
 
   .about-content p {
-    font-size: 15px;
+    font-size: 15.5px;
+    line-height: 1.8;
+    margin-bottom: 20px;
   }
 }
 </style>
