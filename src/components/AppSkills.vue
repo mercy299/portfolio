@@ -112,10 +112,10 @@ import ProductIcon from './ProductIcon.vue'
   /* border-color: white; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .skills-container {
     width: 100%;
-    padding: 40px 20px;
+    padding: 60px 20px;
     box-sizing: border-box;
   }
 
@@ -124,15 +124,37 @@ import ProductIcon from './ProductIcon.vue'
     max-width: 100%;
   }
 
+  .welcome {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
   .social-links {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
   }
 
   .social-links a {
-    flex: 0 0 186px;
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 50px 16px;
+  }
+
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    height: 125px;
   }
 }
 </style>
