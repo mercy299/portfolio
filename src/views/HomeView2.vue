@@ -9,7 +9,7 @@ import AppContact from '@/components/AppContact.vue';
 </script>
 
 <template>
-  <div>
+  <div class="main-container">
     <HeroSection />
     <AppSkills />
     <AppExperience />
@@ -20,4 +20,8 @@ import AppContact from '@/components/AppContact.vue';
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main-container {
+  overflow: hidden;
+}
+</style>
