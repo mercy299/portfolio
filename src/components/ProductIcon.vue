@@ -17,6 +17,7 @@ import Bash from '@/assets/images/bash.svg'
 import Docker from '@/assets/images/docker.svg'
 import Kubernetes from '@/assets/images/k8s.svg'
 import GithubActions from '@/assets/images/github-actions.svg'
+import Medium from '@/assets/images/medium.svg'
 
 const componentsMap = {
   Github,
@@ -32,6 +33,7 @@ const componentsMap = {
   Docker,
   Kubernetes,
   GithubActions,
+  Medium,
 }
 
 defineProps({

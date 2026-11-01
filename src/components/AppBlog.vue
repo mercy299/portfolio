@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-container">
+  <div class="portfolio-container" id="blog">
     <div class="content">
 
       <!-- Left: Introduction -->
