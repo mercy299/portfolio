@@ -18,19 +18,19 @@
           scalable systems and leveraging modern tools to drive innovation and efficiency.
         </p>
         <div class="social-links">
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/mercy299" target="_blank">
             <ProductIcon icon="Github" width="27px" />
           </a>
 
-          <a href="https://linkedin.com" target="_blank">
+          <a href="https://www.linkedin.com/in/mercy299/" target="_blank">
             <ProductIcon icon="Linkedin" width="27px" />
           </a>
 
-          <a href="https://twitter.com" target="_blank">
-            <ProductIcon icon="Twitter" width="27px" />
+          <a href="https://medium.com/@mercysam299" target="_blank">
+            <ProductIcon icon="Medium" width="27px" />
           </a>
 
-          <a href="mailto:hello@example.com" >
+          <a href="https://hashnode.com/@10xAnnie" target="_blank">
             <ProductIcon icon="Hashnode" width="27px" />
           </a>
         </div>
