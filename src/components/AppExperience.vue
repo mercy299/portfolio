@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-container">
+  <div class="experience-container" id="experience">
     <div class="content">
       <div class="header-texts">
         <p class="welcome">My <span class="white-text">Experience</span></p>

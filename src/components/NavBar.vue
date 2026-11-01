@@ -8,10 +8,10 @@
       </RouterLink>
       <div class="navbar-list-container">
         <ul class="navbar-list">
-          <li><RouterLink to="#review"> About Me </RouterLink></li>
-          <li><RouterLink to="#services"> Services</RouterLink></li>
+          <li><RouterLink to="#about-me"> About Me </RouterLink></li>
+          <li><RouterLink to="#projects"> Projects</RouterLink></li>
           <li><RouterLink to="#blog"> Blog</RouterLink></li>
-          <li><RouterLink to="#skills"> Skills</RouterLink></li>
+          <li><RouterLink to="#experience"> Experience</RouterLink></li>
         </ul>
       </div>
       <button @click="handleDownload">Resume <i class="fas fa-download"></i></button>
